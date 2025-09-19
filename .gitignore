@@ -210,3 +210,6 @@ __marimo__/
 # Project Ignores
 artifacts/
 .vscode/
+/create_comp_pipeline.py
+/pipeline.txt
+/comp.txt

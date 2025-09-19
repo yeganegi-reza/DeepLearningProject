@@ -19,6 +19,7 @@ class DataIngestionPipeline:
 
 if __name__ == "__main__":
     try:
+        logging.info(f">>>> stage {STAGE_NAME} started <<<<<\n\nX======X")
         pipeline = DataIngestionPipeline()
         pipeline.start()
         logging.info(f">>>> stage {STAGE_NAME} completed <<<<<\n\nX======X")

@@ -25,3 +25,23 @@ class ConfigManager:
     @abstractmethod
     def get_configuration(self):
         raise NotImplemented
+
+
+class ParamManager:
+    @ensure_annotations
+    def __init__(self, comp_dir: Path):
+        self.__set_param_file_path(comp_dir)
+        self.__read_params()
+
+    @ensure_annotations
+    def __read_params(self):
+        self.params = read_yaml(self.param_file_path)
+
+    @ensure_annotations
+    def __set_param_file_path(self, cur_dir: Path):
+        param_file_path = Path(os.path.join(cur_dir, "params.yaml"))
+        self.param_file_path = param_file_path
+
+    @abstractmethod
+    def get_params(self):
+        raise NotImplemented

@@ -1,0 +1,5 @@
+root_dir: artifacts/raw_model
+base_model_path: artifacts/raw_model/base_model.h5
+modified_model_path : artifacts/raw_model/modified_base_model.h5
+
+

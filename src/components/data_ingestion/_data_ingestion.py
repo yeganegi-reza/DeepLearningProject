@@ -20,7 +20,7 @@ class DataIngestionConfig:
     root_dir: Path
     unzip_dir: Path
     local_data_file: Path
-    data_url: str
+    data_url: str 
 
 
 class DataIngConfManager(ConfigManager):
