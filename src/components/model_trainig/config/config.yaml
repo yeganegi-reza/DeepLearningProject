@@ -1,0 +1,2 @@
+modified_model_path : artifacts/raw_model/modified_base_model.h5
+trained_model_path : artifacts/trained_model/modified_base_model.h5

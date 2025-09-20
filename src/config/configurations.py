@@ -1,10 +1,8 @@
 import os
-from abc import abstractmethod
 from pathlib import Path
+from abc import abstractmethod
 from ensure import ensure_annotations
-
 from reytools.read_write import read_yaml
-from reytools.logger import logging
 
 
 class ConfigManager:

@@ -21,11 +21,8 @@ class ModelDefinitionConfig:
 
 @dataclass(frozen=True)
 class ModelDefinitionParams:
-    augementation: bool
     image_size: list
-    batch_size: int
     include_top: bool
-    epochs: int
     classes: int
     weights: str
     learning_rate: float
@@ -57,11 +54,8 @@ class ModelDefinitionParamManager(ParamManager):
     def get_params(self) -> ModelDefinitionParams:
         parmas = self.params
         model_def_params = ModelDefinitionParams(
-            augementation=parmas.AUGMENTATION,
             image_size=parmas.IMAGE_SIZE,
-            batch_size=parmas.BATCH_SIZE,
             include_top=parmas.INCLUDE_TOP,
-            epochs=parmas.EPOCHS,
             classes=parmas.CLASSES,
             weights=parmas.WEIGHTS,
             learning_rate=parmas.LEARNING_RATE,
